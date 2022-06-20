@@ -38,7 +38,7 @@ public class NodeStatusProducer {
         try{
             //logger.debug("NodeStatusProducer send message to queue: "+ topicName+", object = "+status);
             String json = objectMapper.writeValueAsString(status);
-            logger.info("NodeStatusProducer send message to queue: "+ topicName+", json = "+json);
+            logger.info("NodeStatusProducer send message to topic: "+ topicName+", json = "+json);
             jmsTemplate.convertAndSend(topicName, json);
         } catch(Exception e){
            logger.error("NodeStatusProducer got exception: ", e);

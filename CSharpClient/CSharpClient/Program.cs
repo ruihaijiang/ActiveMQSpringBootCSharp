@@ -108,13 +108,13 @@ namespace CSharpClient
 
 
 
-        //static public String JMS_URL = "activemq:tcp://localhost:61616";
-        static public String JMS_URL = "activemq:tcp://192.168.1.5:61616";
+        static public String JMS_URL = "activemq:tcp://localhost:61616";
+        //static public String JMS_URL = "activemq:tcp://192.168.1.5:61616";
 
         static public String NODE_STATUS_TOPIC_NAME = "topic://node-status";
         static public String ORDER_CHANGED_TOPIC_NAME = "topic://order-changed";
         static public String STOCK_CHANGED_TOPIC_NAME = "topic://stock-changed";
-        static public String HEARTBEAT_QUEUE_NAME = "queue://heart-beat";
+        static public String HEARTBEAT_QUEUE_NAME = "queue://heartbeat";
 
 
         protected static TimeSpan receiveTimeout = TimeSpan.FromSeconds(10);
